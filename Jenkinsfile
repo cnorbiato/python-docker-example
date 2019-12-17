@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'python-docker-example'
+      image 'cnorbiato/python-docker-example'
     }
 
   }
