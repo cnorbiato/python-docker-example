@@ -1,12 +1,12 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'dockerfile'
+    docker {
+      image 'python-docker-example'
     }
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'Foi'
       }
