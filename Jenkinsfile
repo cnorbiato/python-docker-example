@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('') {
       steps {
-        sh 'docker build -t cnorbiato/python-docker-example'
+        echo 'Foi'
       }
     }
 
