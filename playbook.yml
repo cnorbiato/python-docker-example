@@ -1,0 +1,13 @@
+- hosts: localhost
+
+  tasks:
+   - name: pull imagem do docker
+     docker_image:
+      name: cnorbiato/my-python-app      #source: pull
+
+   - name: iniciar container
+     docker_container:
+      name: my-python-app
+      image: cnorbiato/my-python-app
+      ports:
+       - "5000:5000"
